@@ -1,0 +1,4 @@
+RewriteEngine  on
+RewriteRule ^/?health$ health.php [L]
+
+SetEnvIf Request_URI "^/?health$" dontlog
